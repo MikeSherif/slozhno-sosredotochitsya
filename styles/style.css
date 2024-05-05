@@ -4,7 +4,7 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     font-family: var(--font-family);
     font-size: var(--font-size);
-    background: url("/images/cover-image-dark.png") no-repeat center / cover fixed;
+    background: url("../images/cover-image-dark.png") no-repeat center / cover fixed;
 }
 
 .header {
@@ -18,7 +18,7 @@
 
 .decorated-zone {
     display: grid;
-    background: url("/images/cover-image-dark.png") no-repeat center / cover;
+    background: url("../images/cover-image-dark.png") no-repeat center / cover;
     grid-template-rows: 1fr max-content 1fr;
 }
 

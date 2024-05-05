@@ -32,11 +32,11 @@
       Так стили написанные ниже будут иметь больший вес,
       чем стили в медиазапросе предпочтений пользователя
     */
-    background: url("/images/cover-image-light.png") no-repeat center / cover fixed;
+    background: url("../images/cover-image-light.png") no-repeat center / cover fixed;
 }
 
 .theme_light .decorated-zone {
-    background: url("/images/cover-image-light.png") no-repeat center / cover;
+    background: url("../images/cover-image-light.png") no-repeat center / cover;
 }
 
 .theme_light .header__span-decoration {

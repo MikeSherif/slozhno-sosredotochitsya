@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light {
+:root .theme_light {
     --accent-color: #ff8dcb;
     --accent-text-color: #353430;
     --title-color: #ffc2e6;
@@ -24,10 +24,7 @@
         --font-weight-regular: 400;
         --font-size: 18px;
     }
-}
 
-.decorated-zone {
-    background: url("/images/cover-image-light.png") no-repeat center / cover;
 }
 
 .page.theme_light {
@@ -38,10 +35,40 @@
     background: url("/images/cover-image-light.png") no-repeat center / cover fixed;
 }
 
-.header__span-decoration {
+.theme_light .decorated-zone {
+    background: url("/images/cover-image-light.png") no-repeat center / cover;
+}
+
+.theme_light .header__span-decoration {
     display: none;
 }
 
-.header__span-decoration::after {
+.theme_light .header__span-decoration::after {
     display: none;
 }
+
+.theme_light .angles::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border-right: 1px solid var(--accent-text-color);
+    border-top: 1px solid var(--accent-text-color);
+}
+
+.theme_light .angles::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid var(--accent-text-color);
+    border-bottom: 1px solid var(--accent-text-color);
+}
+
+
+
+

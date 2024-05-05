@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark {
+:root .theme_dark {
     --accent-color: #ff0070;
     --accent-text-color: #000028;
     --title-color: #db00ff;
@@ -21,4 +21,28 @@
     background: url("/images/cover-image-dark.png") no-repeat center / cover fixed;
 }
 
+.decorated-zone {
+    display: grid;
+    background: url("/images/cover-image-dark.png") no-repeat center / cover;
+    grid-template-rows: 1fr max-content 1fr;
+}
 
+.header__span-decoration {
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 38px;
+    color: var(--accent-color);
+}
+
+.header__span-decoration::after {
+    position: absolute;
+    top: 7px;
+    right: -18px;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: var(--accent-color);
+    border-radius: 100%;
+    box-shadow: 0 0 4px 2px var(--accent-color);
+}

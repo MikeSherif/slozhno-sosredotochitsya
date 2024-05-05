@@ -59,7 +59,7 @@
     content: "";
     width: 9px;
     height: 9px;
-    background: var(--accent-color);
+    background: none;
     border-radius: 100%;
     box-shadow: 0 0 4px 2px var(--accent-color);
 }
@@ -109,7 +109,6 @@
 }
 
 .title-decor {
-    background: var(--accent-color);
     font-weight: var(--font-weight-bald);
     font-size: var(--font-size);
     line-height: 130%;

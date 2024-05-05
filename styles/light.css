@@ -24,7 +24,6 @@
         --font-weight-regular: 400;
         --font-size: 18px;
     }
-
 }
 
 .page.theme_light {
@@ -57,6 +56,28 @@
     border-bottom: 1px solid var(--accent-text-color);
 }
 
+@media (prefers-color-scheme: light) {
+    .theme_light .decorated-zone {
+        background: url("../images/cover-image-light.png") no-repeat center / cover;
+    }
 
+    .theme_light .header__span-decoration {
+        display: none;
+    }
+
+    .theme_light .header__span-decoration::after {
+        display: none;
+    }
+
+    .theme_light .angles::after {
+        border-right: 1px solid var(--accent-text-color);
+        border-top: 1px solid var(--accent-text-color);
+    }
+
+    .theme_light .angles::before {
+        border-left: 1px solid var(--accent-text-color);
+        border-bottom: 1px solid var(--accent-text-color);
+    }
+}
 
 

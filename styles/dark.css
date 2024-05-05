@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark{
+:root.theme-dark {
     --accent-color: #ff0070;
     --accent-text-color: #000028;
     --title-color: #db00ff;
@@ -20,6 +20,6 @@
     background: url("/images/cover-image-dark.png") no-repeat center / cover fixed;
 }
 
-.decorated-zone{
+.decorated-zone {
     background: url("/images/cover-image-dark.png") no-repeat center / cover;
 }

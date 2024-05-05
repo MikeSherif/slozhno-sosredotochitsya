@@ -1,4 +1,3 @@
-
 :root .theme_light {
     --accent-color: #ff8dcb;
     --accent-text-color: #353430;
@@ -53,6 +52,10 @@
 }
 
 @media (prefers-color-scheme: light) {
+    .page.theme_light {
+        background: url("../images/cover-image-light.png") no-repeat center / cover fixed;
+    }
+
     .theme_light .decorated-zone {
         background: url("../images/cover-image-light.png") no-repeat center / cover;
     }

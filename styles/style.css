@@ -109,6 +109,7 @@
 }
 
 .title-decor {
+    background: var(--accent-color);
     font-weight: var(--font-weight-bald);
     font-size: var(--font-size);
     line-height: 130%;

@@ -46,3 +46,10 @@
     border-radius: 100%;
     box-shadow: 0 0 4px 2px var(--accent-color);
 }
+
+@media ( width >= 768px ) {
+    .header__span-decoration {
+        top: 20px;
+        right: 48px;
+    }
+}

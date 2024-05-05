@@ -13,6 +13,20 @@
     --font-size: 18px;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Дублируем переменные светлой темы */
+        --accent-color: #ff0070;
+        --accent-text-color: #000028;
+        --title-color: #db00ff;
+        --regular-text-color: #f1b2ce;
+        --font-weight-bald: 700;
+        --font-weight-regular: 400;
+        --font-size: 18px;
+    }
+
+}
+
 .page.theme_dark {
     /* сохраните этот селектор в приведённом виде.
       Так стили написанные ниже будут иметь больший вес,

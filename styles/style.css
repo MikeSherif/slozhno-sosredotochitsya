@@ -189,7 +189,7 @@
     font-weight: var(--font-weight-regular);
 }
 
-.main__section-four{
+.main__section-four {
     gap: 10px;
 }
 
@@ -307,23 +307,23 @@
         margin-block-start: 40px;
     }
 
-    .footer__title-text{
+    .footer__title-text {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
     }
 }
 
 @media (width >= 1024px) {
-    .header__theme-menu{
+    .header__theme-menu {
         justify-items: center;
         align-items: flex-start;
     }
 
-    .header__theme-menu-list{
+    .header__theme-menu-list {
         grid-template-rows: auto;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main__section-one{
+    .main__section-one {
         gap: 10px;
     }
 

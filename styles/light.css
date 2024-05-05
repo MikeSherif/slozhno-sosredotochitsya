@@ -38,3 +38,10 @@
     background: url("/images/cover-image-light.png") no-repeat center / cover fixed;
 }
 
+.header__span-decoration {
+    display: none;
+}
+
+.header__span-decoration::after {
+    display: none;
+}

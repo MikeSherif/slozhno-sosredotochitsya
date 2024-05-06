@@ -5,35 +5,18 @@
 */
 :root .theme_dark {
     --accent-color: #ff0070;
+    --accent-title-color: #ff0070;
     --accent-text-color: #000028;
     --title-color: #db00ff;
     --regular-text-color: #f1b2ce;
     --background-color: #00183F;
     --angles-color: #ff0070;
+    --hover-color: rgba(255, 0, 112, 0.4);
     --font-weight-bald: 700;
     --font-weight-regular: 400;
     --font-size: 18px;
     --display: block;
     --background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Дублируем переменные светлой темы */
-        --accent-color: #ff0070;
-        --accent-title-color: #ff0070;
-        --accent-text-color: #000028;
-        --title-color: #db00ff;
-        --regular-text-color: #f1b2ce;
-        --background-color: #00183F;
-        --angles-color: #ff0070;
-        --font-weight-bald: 700;
-        --font-weight-regular: 400;
-        --font-size: 18px;
-        --display: block;
-        --background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover;
-    }
-
 }
 
 .page.theme_dark {
@@ -43,19 +26,4 @@
     */
     background: var(--background) fixed;
 
-}
-
-/*.decorated-zone {
-    display: grid;
-    background: url("../images/cover-image-dark.png") no-repeat center / cover;
-    grid-template-rows: 1fr max-content 1fr;
-}*/
-
-
-
-@media ( width >= 768px ) {
-    .header__span-decoration {
-        top: 20px;
-        right: 48px;
-    }
 }

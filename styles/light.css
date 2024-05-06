@@ -6,6 +6,7 @@
     --regular-text-color: #353430;
     --angles-color: #353430;
     --background-color: #FFF1F7;
+    --hover-color: rgba(50, 49, 45, 0.4);
     --font-weight-bald: 700;
     --font-weight-regular: 400;
     --font-size: 18px;
@@ -23,6 +24,7 @@
         --regular-text-color: #353430;
         --angles-color: #353430;
         --background-color: #FFF1F7;
+        --hover-color: rgba(50, 49, 45, 0.4);
         --font-weight-bald: 700;
         --font-weight-regular: 400;
         --font-size: 18px;
@@ -38,9 +40,9 @@
     */
     background: var(--background) fixed;
 
-    .decorated-zone {
+    /*.decorated-zone {
         background: var(--background);
-    }
+    }*/
 
     .header__span-decoration, .header__span-decoration::after {
         display: var(--display);
@@ -48,10 +50,6 @@
 
     .main__section-title, .header__theme-menu-button {
         color: var(--accent-text-color);
-    }
-
-    .header__theme-menu-button:hover, .header__theme-menu-button_active {
-        border: 1px solid var(--accent-text-color);
     }
 
     .header__theme-menu-button:focus-visible {

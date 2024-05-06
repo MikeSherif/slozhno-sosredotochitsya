@@ -2,14 +2,15 @@
 
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    font-family: var(--font-family);
+    font-family: var(--font-family), monospace;
     font-size: var(--font-size);
     background: var(--background) fixed;
 }
 
 .header {
-    width: 100%;
-    height: 100vh;
+    inline-size: 100%;
+    min-block-size: 668px;
+    block-size: 100vh;
     position: relative;
     inset: 0;
     padding: 10px;
@@ -18,7 +19,7 @@
 
 .decorated-zone {
     display: grid;
-    background: var(--background);
+    /*background: var(--background);*/
     grid-template-rows: 1fr max-content 1fr;
 }
 
@@ -27,8 +28,8 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 25px;
-    height: 25px;
+    inline-size: 25px;
+    block-size: 25px;
     border-right: 1px solid var(--angles-color);
     border-top: 1px solid var(--angles-color);
 }
@@ -38,8 +39,8 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: 25px;
-    height: 25px;
+    inline-size: 25px;
+    block-size: 25px;
     border-left: 1px solid var(--angles-color);
     border-bottom: 1px solid var(--angles-color);
 }
@@ -59,8 +60,8 @@
     top: 7px;
     right: -18px;
     content: "";
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     background: var(--accent-color);
     border-radius: 100%;
     box-shadow: 0 0 4px 2px var(--accent-color);
@@ -79,27 +80,31 @@
 }
 
 .header__theme-menu-button {
-    width: 70px;
-    height: 26px;
+    inline-size: 70px;
+    block-size: 26px;
     color: var(--angles-color);
     line-height: 100%;
     text-transform: lowercase;
     text-align: center;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-    border: 1px solid var(--angles-color);
+    border: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button_active {
     border: 1px solid var(--angles-color);
 }
 
+.header__theme-menu-button:focus{
+    outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid var(--angles-color);
-    outline: none;
 }
 
 .header__title-text {
@@ -119,7 +124,7 @@
 }
 
 .header__thesis {
-    width: 100%;
+    inline-size: 100%;
     align-self: center;
     text-align: left;
 }
@@ -132,7 +137,7 @@
 }
 
 .main {
-    width: 100%;
+    inline-size: 100%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -140,7 +145,7 @@
 }
 
 .main__section {
-    width: 100%;
+    inline-size: 100%;
     display: grid;
     gap: 20px;
 }
@@ -159,7 +164,7 @@
 }
 
 .main__section-card {
-    width: 100%;
+    inline-size: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -178,36 +183,41 @@
 }
 
 .main__section-card-text-link:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid var(--regular-text-color);
 }
 
 .main__section-card-text-link:focus-visible {
     outline: 1px solid var(--regular-text-color);
 }
 
-.main__section-three .main__section-card > .title-decor {
+.title-decor-regular {
+    background: var(--accent-color);
+    font-size: var(--font-size);
+    line-height: 130%;
+    color: var(--accent-text-color);
     font-weight: var(--font-weight-regular);
 }
 
-.main__section-four {
+.main__section:nth-child(4) {
     gap: 10px;
 }
 
 .main__section-img {
-    width: 100%;
+    inline-size: 100%;
     display: grid;
     gap: 10px;
 }
 
 .main__section-img-item {
-    width: 100%;
+    inline-size: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 .footer {
-    width: 100%;
-    height: 100vh;
+    inline-size: 100%;
+    min-block-size: 668px;
+    block-size: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -251,7 +261,7 @@
     }
 
     .header__thesis {
-        width: 50%;
+        inline-size: 50%;
         justify-self: flex-end;
     }
 
@@ -264,15 +274,15 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .main__section-two {
+    .main__section:nth-child(2) {
         grid-template-columns: auto;
     }
 
-    .main__section-two .main__section-title {
-        width: calc(1 / 3 * 100% - 7px);
+    .main__section:nth-child(2) .main__section-title {
+        inline-size: calc(1 / 3 * 100% - 7px);
     }
 
-    .main__section-four {
+    .main__section:nth-child(4) {
         grid-template-columns: auto;
         gap: 20px;
     }
@@ -283,23 +293,23 @@
     }
 
     .main__section-img-item {
-        block-size: 100%;
-        inline-size: 100%;
+        width: 100%;
+        height: 100%;
     }
 
-    .item1 {
+    .main__section-img-item:nth-child(1) {
         grid-column: span 2;
     }
 
-    .item2 {
+    .main__section-img-item:nth-child(2) {
         grid-row: span 2;
     }
 
-    .item3 {
+    .main__section-img-item:nth-child(3) {
         grid-row: span 2;
     }
 
-    .item5 {
+    .main__section-img-item:nth-child(5) {
         grid-column: span 2;
     }
 
@@ -312,7 +322,7 @@
     }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1023px) {
     .header__theme-menu {
         justify-items: center;
         align-items: flex-start;
@@ -323,11 +333,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main__section-one {
+    .main__section:nth-child(1) {
         gap: 10px;
     }
 
-    .main__section-two .main__section-container {
+    .main__section:nth-child(2) .main__section-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }

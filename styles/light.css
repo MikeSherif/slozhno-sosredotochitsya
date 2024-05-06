@@ -38,9 +38,10 @@
     */
     background: var(--background) fixed;
 
-    .decorated-zone{
+    .decorated-zone {
         background: var(--background);
     }
+
     .header__span-decoration, .header__span-decoration::after {
         display: var(--display);
     }
@@ -66,9 +67,10 @@
         */
         background: var(--background) fixed;
 
-        .decorated-zone{
+        .decorated-zone {
             background: var(--background);
         }
+
         .header__span-decoration, .header__span-decoration::after {
             display: none;
         }

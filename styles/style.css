@@ -4,7 +4,7 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     font-family: var(--font-family);
     font-size: var(--font-size);
-    background: url("../images/cover-image-dark.png") no-repeat center / cover fixed;
+    background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover fixed;
 }
 
 .header {

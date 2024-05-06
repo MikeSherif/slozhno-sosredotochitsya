@@ -54,7 +54,7 @@
 
 @media (prefers-color-scheme: light) {
     .page.theme_light {
-        background: url("../images/cover-image-light.png") no-repeat center / cover fixed;
+        background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover fixed;
     }
 
     .theme_light .decorated-zone {

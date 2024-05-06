@@ -37,11 +37,11 @@
     background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover fixed;
 }
 
-.decorated-zone {
+/*.decorated-zone {
     display: grid;
     background: url("../images/cover-image-dark.png") no-repeat center / cover;
     grid-template-rows: 1fr max-content 1fr;
-}
+}*/
 
 .header__span-decoration {
     text-transform: uppercase;

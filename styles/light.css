@@ -30,9 +30,9 @@
     background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover fixed;
 }
 
-.theme_light > .decorated-zone {
+/*.theme_light .decorated-zone {
     background: url("../images/cover-image-light.png") no-repeat center / cover;
-}
+}*/
 
 .theme_light .header__span-decoration {
     display: none;
@@ -57,9 +57,9 @@
         background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover fixed;
     }
 
-    .theme_light .decorated-zone {
+    /*.theme_light .decorated-zone {
         background: url("../images/cover-image-light.png") no-repeat center / cover;
-    }
+    }*/
 
     .theme_light .header__span-decoration {
         display: none;

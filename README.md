@@ -1,1 +1,1 @@
-https://mikesherif.github.io/slozhno-sosredotochitsya/
+https://github.com/MikeSherif/slozhno-sosredotochitsya

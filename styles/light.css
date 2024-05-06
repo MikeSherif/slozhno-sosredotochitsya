@@ -1,24 +1,33 @@
 :root .theme_light {
     --accent-color: #ff8dcb;
+    --accent-title-color: #353430;
     --accent-text-color: #353430;
     --title-color: #ffc2e6;
     --regular-text-color: #353430;
+    --angles-color: #353430;
+    --background-color: #FFF1F7;
     --font-weight-bald: 700;
     --font-weight-regular: 400;
     --font-size: 18px;
+    --display: none;
+    --background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         /* Дублируем переменные светлой темы */
         --accent-color: #ff8dcb;
+        --accent-title-color: #353430;
         --accent-text-color: #353430;
         --title-color: #ffc2e6;
         --regular-text-color: #353430;
+        --angles-color: #353430;
         --background-color: #FFF1F7;
         --font-weight-bald: 700;
         --font-weight-regular: 400;
         --font-size: 18px;
+        --display: none;
+        --background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover;
     }
 }
 
@@ -27,20 +36,13 @@
       Так стили написанные ниже будут иметь больший вес,
       чем стили в медиазапросе предпочтений пользователя
     */
-    background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover fixed;
+    background: var(--background) fixed;
 
+    .decorated-zone{
+        background: var(--background);
+    }
     .header__span-decoration, .header__span-decoration::after {
-        display: none;
-    }
-
-    .angles::after {
-        border-right: 1px solid var(--accent-text-color);
-        border-top: 1px solid var(--accent-text-color);
-    }
-
-    .angles::before {
-        border-left: 1px solid var(--accent-text-color);
-        border-bottom: 1px solid var(--accent-text-color);
+        display: var(--display);
     }
 
     .main__section-title, .header__theme-menu-button {
@@ -56,32 +58,19 @@
     }
 }
 
-/*.theme_light .decorated-zone {
-    background: url("../images/cover-image-light.png") no-repeat center / cover;
-}*/
-
-
-
 @media (prefers-color-scheme: light) {
     .page.theme_light {
         /* сохраните этот селектор в приведённом виде.
           Так стили написанные ниже будут иметь больший вес,
           чем стили в медиазапросе предпочтений пользователя
         */
-        background: url("../images/cover-image-light.png") var(--background-color) no-repeat center / cover fixed;
+        background: var(--background) fixed;
 
+        .decorated-zone{
+            background: var(--background);
+        }
         .header__span-decoration, .header__span-decoration::after {
             display: none;
-        }
-
-        .angles::after {
-            border-right: 1px solid var(--accent-text-color);
-            border-top: 1px solid var(--accent-text-color);
-        }
-
-        .angles::before {
-            border-left: 1px solid var(--accent-text-color);
-            border-bottom: 1px solid var(--accent-text-color);
         }
 
         .main__section-title, .header__theme-menu-button {

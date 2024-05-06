@@ -5,10 +5,15 @@
 :root {
     --font-family: IBM Plex Mono, "IBM Plex Mono", sans-serif;
     --accent-color: #ff0070;
+    --accent-title-color: #ff0070;
     --accent-text-color: #000028;
     --title-color: #db00ff;
     --regular-text-color: #f1b2ce;
+    --background-color: #00183F;
+    --angles-color: #ff0070;
     --font-weight-bald: 700;
     --font-weight-regular: 400;
     --font-size: 18px;
+    --display: block;
+    --background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover;
 }

@@ -4,7 +4,7 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     font-family: var(--font-family);
     font-size: var(--font-size);
-    background: url("../images/cover-image-dark.png") var(--background-color) no-repeat center / cover fixed;
+    background: var(--background);
 }
 
 .header {
@@ -18,7 +18,7 @@
 
 .decorated-zone {
     display: grid;
-    /*background: url("../images/cover-image-dark.png") no-repeat center / cover;*/
+    background: var(--background);
     grid-template-rows: 1fr max-content 1fr;
 }
 
@@ -29,8 +29,8 @@
     right: 10px;
     width: 25px;
     height: 25px;
-    border-right: 1px solid var(--accent-color);
-    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--angles-color);
+    border-top: 1px solid var(--angles-color);
 }
 
 .angles::before {
@@ -40,11 +40,12 @@
     left: 10px;
     width: 25px;
     height: 25px;
-    border-left: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--angles-color);
+    border-bottom: 1px solid var(--angles-color);
 }
 
 .header__span-decoration {
+    display: var(--display);
     text-transform: uppercase;
     position: absolute;
     top: 10px;
@@ -53,13 +54,14 @@
 }
 
 .header__span-decoration::after {
+    display: var(--display);
     position: absolute;
     top: 7px;
     right: -18px;
     content: "";
     width: 9px;
     height: 9px;
-    background: none;
+    background: var(--accent-color);
     border-radius: 100%;
     box-shadow: 0 0 4px 2px var(--accent-color);
 }
@@ -79,7 +81,7 @@
 .header__theme-menu-button {
     width: 70px;
     height: 26px;
-    color: var(--accent-color);
+    color: var(--angles-color);
     line-height: 100%;
     text-transform: lowercase;
     text-align: center;
@@ -88,15 +90,15 @@
 }
 
 .header__theme-menu-button:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--angles-color);
 }
 
 .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--angles-color);
 }
 
 .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--angles-color);
     outline: none;
 }
 
@@ -145,7 +147,7 @@
 
 .main__section-title {
     font-size: var(--font-size);
-    color: var(--accent-color);
+    color: var(--accent-title-color);
     font-weight: var(--font-weight-bald);
     line-height: 130%;
 }

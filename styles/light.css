@@ -40,10 +40,6 @@
     */
     background: var(--background) fixed;
 
-    /*.decorated-zone {
-        background: var(--background);
-    }*/
-
     .header__span-decoration, .header__span-decoration::after {
         display: var(--display);
     }
@@ -65,10 +61,6 @@
         */
         background: var(--background) fixed;
 
-        .decorated-zone {
-            background: var(--background);
-        }
-
         .header__span-decoration, .header__span-decoration::after {
             display: none;
         }
@@ -77,7 +69,11 @@
             color: var(--accent-text-color);
         }
 
-        .header__theme-menu-button:hover, .header__theme-menu-button_active {
+        .header__theme-menu-button:hover {
+            border: 1px solid var(--hover-color);
+        }
+
+        .header__theme-menu-button_active {
             border: 1px solid var(--accent-text-color);
         }
 

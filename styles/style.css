@@ -97,6 +97,7 @@
 
 .header__theme-menu-button_active {
     border: 1px solid var(--angles-color);
+    pointer-events: none;
 }
 
 .header__theme-menu-button:focus {
@@ -190,11 +191,7 @@
     outline: 1px solid var(--regular-text-color);
 }
 
-.title-decor-regular {
-    background: var(--accent-color);
-    font-size: var(--font-size);
-    line-height: 130%;
-    color: var(--accent-text-color);
+.title-decor_type_secondary {
     font-weight: var(--font-weight-regular);
 }
 
